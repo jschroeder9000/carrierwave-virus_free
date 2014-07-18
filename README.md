@@ -16,9 +16,25 @@ Or install it yourself as:
 
     $ gem install carrierwave-virus_free_validator
 
+## ClamScan Dependency
+
+This gem requires the _clam_scan_ gem which requires that you have ClamAV installed.  You may also need to configure it according to your needs - pointing it to the right location to clamscan/clamdscan on your system, setting it to delete infected files, etc.  See the _clam_scan_ gem documentation for more details.
+
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+ClamScan.configure do |config|
+  # see clam_scan documentation for details
+end
+
+class MyModel < ActiveRecord::Base
+  mount_uploader :file, MyUploader
+
+  validates :file, virus_free: true
+end
+```
+
+It's that easy.
 
 ## Contributing
 
