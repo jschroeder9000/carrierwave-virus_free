@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["jschroeder@multiadsolutions.com"]
   spec.summary       = %q{Validate carrierwave uploads are virus free with clamav.}
   spec.description   = %q{Validate carrierwave uploads are virus free with clamav.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/jschroeder9000/carrierwave-virus_free"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "activemodel"
   spec.add_dependency "carrierwave"
+  spec.add_dependency "clam_scan"
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
