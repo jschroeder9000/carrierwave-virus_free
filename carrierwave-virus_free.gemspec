@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Carrierwave::VirusFree::VERSION
   spec.authors       = ["John Schroeder"]
   spec.email         = ["jschroeder@multiadsolutions.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Validate carrierwave uploads are virus free with clamav.}
+  spec.description   = %q{Validate carrierwave uploads are virus free with clamav.}
   spec.homepage      = ""
   spec.license       = "MIT"
 

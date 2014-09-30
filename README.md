@@ -1,6 +1,6 @@
 # Carrierwave::VirusFreeValidator
 
-TODO: Write a gem description
+Validate carrierwave uploads are virus free with clamav.
 
 ## Installation
 
