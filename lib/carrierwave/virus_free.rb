@@ -1,3 +1,5 @@
+require 'clam_scan'
+
 module CarrierWave
   module VirusFree
     class VirusFreeValidator < ActiveModel::EachValidator
