@@ -20,6 +20,7 @@
 require 'active_model'
 require 'carrierwave/virus_free'
 require 'clam_scan'
+require 'pry'
 
 Dir[File.expand_path(File.join('..', 'support', '**', '*.rb'), __FILE__)].each { |f| require f }
 
