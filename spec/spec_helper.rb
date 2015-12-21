@@ -17,10 +17,17 @@
 
 # end initial stuff
 
-require 'active_model'
+require 'combustion'
+
+require 'active_record'
+require 'carrierwave'
 require 'carrierwave/virus_free'
-require 'clam_scan'
 require 'pry'
+require 'sqlite3'
+
+Combustion.initialize! :active_record
+
+require 'rspec/rails'
 
 Dir[File.expand_path(File.join('..', 'support', '**', '*.rb'), __FILE__)].each { |f| require f }
 
@@ -86,7 +93,13 @@ RSpec.configure do |config|
 
   # end default stuff
 
-  config.before(:suite) do
+  config.include DataHelpers
+  config.include MockHelpers
+
+  # this should really be before :suite
+  # but it doesn't work and i'm not exactly sure why
+  # http://stackoverflow.com/q/34403095/4283486
+  config.before(:context) do
     # make data dir if it doesn't exist
     unless File.directory? data_path
       require 'fileutils'
