@@ -1,4 +1,4 @@
-# Carrierwave::VirusFreeValidator
+# Carrierwave::VirusFree
 
 Validate carrierwave uploads are virus free with clamav.
 
