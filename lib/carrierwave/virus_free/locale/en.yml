@@ -1,0 +1,5 @@
+en:
+  errors:
+    messages:
+      virus_free_error: 'could not be processed'
+      virus_free_unsafe: 'could not be accepted'
