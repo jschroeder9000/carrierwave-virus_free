@@ -6,7 +6,7 @@ Validate carrierwave uploads are virus free with clamav.
 
 Add this line to your application's Gemfile:
 
-    gem 'carrierwave-virus_free_validator'
+    gem 'carrierwave-virus_free'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install carrierwave-virus_free_validator
+    $ gem install carrierwave-virus_free
 
 ## ClamScan Dependency
 
@@ -52,7 +52,7 @@ Please be aware of this caveat.  You can protect against this by preventing exte
 
 ## Contributing
 
-1. Fork it ( https://github.com/jschroeder9000/carrierwave-virus_free_validator/fork )
+1. Fork it ( https://github.com/jschroeder9000/carrierwave-virus_free/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
