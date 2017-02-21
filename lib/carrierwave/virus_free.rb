@@ -10,4 +10,4 @@ module CarrierWave
   end
 end
 
-ActiveModel::Validations.include CarrierWave::VirusFree
+ActiveModel::Validations.send :include, CarrierWave::VirusFree
